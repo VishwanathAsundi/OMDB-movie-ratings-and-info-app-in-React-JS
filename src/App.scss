@@ -1,0 +1,106 @@
+.header {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    background: slategrey;
+    padding: 25px 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.set-bg {
+    background-color: #E5F1FF;
+}
+
+.posts {
+    margin: 30px 0px;
+    width: 100%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 100vh;
+
+
+    .loader {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    .movie-post {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+        margin: 20px;
+
+
+        .image-box {
+            width: 100%;
+            height: 350px;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+
+            img {
+                box-shadow: 0px 0px 8px solid rgba(0, 0, 0, .5);
+                border: 1px solid rgba(0, 0, 0, .5);
+                border-radius: 10px 10px 0px 0px;
+            }
+
+        }
+
+        .info {
+            display: none;
+            height: 350px;
+            background-color: #f1f1f2;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0px 0px 8px solid rgba(0, 0, 0, .5);
+
+
+            .title {
+                padding: 10px 0px;
+                text-decoration: underline;
+            }
+        }
+
+        &:hover {
+            .image-box {
+                display: none;
+                transition: transform 0.6s;
+            }
+
+            .info {
+                display: block;
+                transition: transform 0.6s;
+
+            }
+        }
+    }
+
+    .error-msg {
+        text-align: center;
+        vertical-align: middle;
+
+        img {
+            width: 500px;
+            height: auto;
+        }
+
+        width: 100%;
+        height: auto;
+    }
+}
+
+.show-more {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.show-details {
+    transition: all ease-in 3s;
+
+    .content {
+        opacity: 0.7;
+    }
+}
