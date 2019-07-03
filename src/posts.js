@@ -117,16 +117,13 @@ class Posts extends Component {
                                                 <div className="movie-post bounceIn">
                                                     <div className="image-box">
                                                         {(isImageUrl(movie.Poster) ?
-
                                                             <img
                                                                 src={movie.Poster} width="100%" height="100%" alt="movie poster" />
-
                                                             :
                                                             <img
                                                                 src="/images/dummy-image.jpg"
                                                                 width="100%" height="100%" alt="alternate poster" />
                                                         )}
-
                                                     </div>
                                                     <div className="info fade-out">
                                                         <h6 className="title">{movie && movie.Title}</h6>
